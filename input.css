@@ -1,3 +1,78 @@
+@import url('https://use.typekit.net/ean3icx.css');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	html {
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		scroll-behavior: smooth;
+	}
+	body {
+		font-family: 'acumin-pro', sans-serif;
+		font-weight: 400;
+		font-style: normal;
+	}
+	h1 {
+		@apply text-[40px] leading-[44px];
+	}
+}
+
+/* Font family acumin pro condensed */
+@layer components {
+	.hide-cursor,
+	.hide-cursor *:not(a) {
+		cursor: none;
+	}
+	.acumin-pro-condensed {
+		font-family: 'acumin-pro-condensed', sans-serif;
+		font-weight: 400;
+		font-style: normal;
+	}
+
+	/* Center tailwind absolute */
+	.center-absolute {
+		@apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+	}
+
+	.desktop-container {
+		@apply lg:max-w-[1440px] lg:mx-auto;
+	}
+
+	.hide-scrollbar::-webkit-scrollbar {
+		display: none; /* for WebKit (Chrome, Safari, etc.) */
+	}
+	.hide-scrollbar {
+		-ms-overflow-style: none; /* for IE and Edge */
+		scrollbar-width: none; /* for Firefox */
+	}
+    /* 
+    box-shadow: 0px 1px 3px 0px #00267766;
+    */
+    .box__shadow {
+        box-shadow: 0px 1px 3px 0px #00267766;
+    }
+
+	/* background: linear-gradient(90deg, #0074F0 4%, rgba(0, 116, 240, 0) 10.51%, rgba(0, 116, 240, 0) 87.67%, #0074F0 96.36%);  */
+	.gradient__bg {
+		background: linear-gradient(90deg, #0074F0 4%, rgba(0, 116, 240, 0) 10.51%, rgba(0, 116, 240, 0) 87.67%, #0074F0 96.36%);
+	}
+
+	.tab {
+		@apply flex w-full  flex-col gap-[10px] lg:gap-[11px] whitespace-nowrap uppercase opacity-50 [&.activeTab]:opacity-100;
+	}
+
+	.tab__line {
+		@apply h-[2px] lg:h-[4px] w-full bg-white;
+	}
+
+	.tab__text {
+		@apply pr-5 text-[24px] font-medium leading-[24px] lg:size-[22px] text-white;
+	}
+
+	.transition__all {
+		@apply transition-all duration-300 ease-in-out;
+	}
+}
