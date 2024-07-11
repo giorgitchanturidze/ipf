@@ -5,10 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="./output.css" rel="stylesheet" />
     </head>
-    <body class="bg-brightBlue">
-        <header class="sticky top-0 bg-brightBlue">
+    <body class="bg-white">
+        <header class="sticky top-0 bg-white z-40">
             <!-- Navigation and Tabs -->
-            <div class="box__shadow mx-auto pb-[26px] lg:pb-10">
+            <div class="box__shadow__blue mx-auto pb-[26px] lg:pb-10">
                 <!-- Logo and Navigation -->
                 <div
                     class="mx-auto flex max-w-[1440px] items-center justify-between px-5 pb-[10px] pt-5 lg:items-start lg:pb-[35px]"
@@ -17,12 +17,12 @@
                     <a href="/">
                         <img
                             class="lg:hidden"
-                            src="public/logo/white-small.svg"
+                            src="public/logo/black-small.svg"
                             alt="logo"
                         />
                         <img
                             class="hidden lg:block"
-                            src="public/logo/white-big.svg"
+                            src="public/logo/black-big.svg"
                             alt="logo"
                         />
                     </a>
@@ -34,20 +34,20 @@
                         >
                             <img
                                 class="lg:h-full lg:w-full"
-                                src="public/icons/white-hamburger-menu.svg"
-                                alt="white-hamburger-menu"
+                                src="public/icons/black-hamburger-menu.svg"
+                                alt="black-hamburger-menu"
                             />
                         </button>
                         <!-- Navigation Links -->
                         <ul
-                            class="my-auto hidden items-center justify-center gap-[30px] pt-[11px] text-[22px] font-semibold leading-[26px] text-white xl:flex"
+                            class="my-auto hidden items-center justify-center gap-[30px] pt-[11px] text-[22px] font-semibold leading-[26px] text-black xl:flex"
                         >
                             <li>
                                 <a
                                     href="#"
                                     class="flex items-center gap-[10px] hover:underline"
                                     ><img
-                                        src="public/icons/small-menu-logo.svg"
+                                        src="public/icons/black-small-globe.svg"
                                         alt="small logo"
                                     />About Us</a
                                 >
@@ -73,7 +73,7 @@
                                 class="flex h-[32px] items-center justify-center gap-[10px] text-[18px] font-bold leading-[21px]"
                             >
                                 <img
-                                    src="public/icons/small-globe.svg"
+                                    src="public/icons/black-small-menu-logo.svg"
                                     alt="globe"
                                 />
                                 <div class="flex flex-col">
@@ -90,37 +90,41 @@
                     </nav>
                 </div>
                 <!-- Tabs -->
-                <div class="relative mx-auto mt-5 max-w-[1440px]">
+                <div class="relative mx-auto mt-5 h-full max-w-[1440px]">
                     <div
                         class="hide-scrollbar flex items-center gap-[10px] overflow-y-hidden overflow-x-auto px-5 pb-1"
                     >
                         <a
                             href="#"
-                            class="activeTab tab lg:w-[18%] lg:shrink-0"
+                            class="tab group lg:w-[37%] lg:shrink-0"
                         >
-                            <div class="tab__line"></div>
-                            <span class="tab__text">News</span>
+                            <div class="tab__line__blue"></div>
+                            <span class="tab__text__blue"
+                                >About Us</span
+                            >
                         </a>
-                        <a href="#" class="tab lg:w-[18%] lg:shrink-0">
-                            <div class="tab__line"></div>
-                            <span class="tab__text">Press</span></a
+                        <a href="#" class="tab group lg:w-[20%] lg:shrink-0">
+                            <div class="tab__line__blue"></div>
+                            <span class="tab__text__blue"
+                                >Meet the team</span
+                            ></a
                         >
-                        <a href="#" class="tab lg:w-[26%] lg:shrink-0">
-                            <div class="tab__line"></div>
-                            <span class="tab__text">press coverage</span></a
+                        <a href="#" class="activeTab tab group lg:w-[20%] lg:shrink-0">
+                            <div class="tab__line__blue"></div>
+                            <span class="tab__text__blue"
+                                >Careers</span
+                            ></a
                         >
-                        <a href="#" class="tab lg:w-[16%] lg:shrink-0">
-                            <div class="tab__line"></div>
-                            <span class="tab__text">Footage</span></a
-                        >
-                        <a href="#" class="tab lg:w-[18%] lg:shrink-0">
-                            <div class="tab__line"></div>
-                            <span class="tab__text">Images</span></a
+                        <a href="#" class="tab group lg:w-[20%] lg:shrink-0">
+                            <div class="tab__line__blue"></div>
+                            <span class="tab__text__blue"
+                                >Annual Reports</span
+                            ></a
                         >
                     </div>
 
                     <div
-                        class="gradient__bg pointer-events-none absolute left-0 top-0 h-full w-[100vw] sm:hidden"
+                        class="white_gradient__bg pointer-events-none absolute left-0 top-0 h-full w-[100vw] sm:hidden"
                     ></div>
                 </div>
             </div>
@@ -196,7 +200,7 @@
                     </div>
                 </div>
                 <a
-                    class="transition__all max- group mt-[50px] flex w-min items-center justify-center gap-[10px] rounded-[5px] border border-brightBlue bg-brightBlue px-5 py-[10px] hover:bg-white lg:ml-[56.71%] lg:mt-[39px] xl:ml-[59.07%]"
+                    class="transition__all max- group mt-[50px] flex w-min items-center justify-center gap-[10px] rounded-[5px] border border-brightBlue bg-brightBlue px-5 hover:bg-white lg:ml-[56.71%] lg:mt-[39px] xl:ml-[59.07%]"
                     href="mailto:jobs@polarfoundation.org"
                 >
                     <svg

@@ -48,20 +48,32 @@
 		-ms-overflow-style: none; /* for IE and Edge */
 		scrollbar-width: none; /* for Firefox */
 	}
-    /* 
-    box-shadow: 0px 1px 3px 0px #00267766;
-    */
+
     .box__shadow {
         box-shadow: 0px 1px 3px 0px #00267766;
     }
 
-	/* background: linear-gradient(90deg, #0074F0 4%, rgba(0, 116, 240, 0) 10.51%, rgba(0, 116, 240, 0) 87.67%, #0074F0 96.36%);  */
+	.box__shadow__orange {
+		box-shadow: 0px 2px 4px 0px #FF7F4133;
+	}
+
+	.box__shadow__blue {
+		box-shadow: 0px 2px 4px 0px #0074F033;
+	}
+	
 	.gradient__bg {
 		background: linear-gradient(90deg, #0074F0 4%, rgba(0, 116, 240, 0) 10.51%, rgba(0, 116, 240, 0) 87.67%, #0074F0 96.36%);
 	}
 
+	.white_gradient__bg {
+		background: linear-gradient(90deg, #FFFFFF 4%, rgba(255, 255, 255, 0) 10.51%, rgba(255, 255, 255, 0) 87.67%, #FFFFFF 96.36%);
+	}
+
+	.truncate__text__bg {
+		background: linear-gradient(180deg, rgba(255, 255, 255, 0) 39.89%, #FFFFFF 100%);
+	}
 	.tab {
-		@apply flex w-full  flex-col gap-[10px] lg:gap-[11px] whitespace-nowrap uppercase opacity-50 [&.activeTab]:opacity-100;
+		@apply flex w-full  flex-col gap-[10px] lg:gap-[12px] whitespace-nowrap uppercase opacity-50 [&.activeTab]:opacity-100 hover:opacity-100 transition-all duration-300 ease-in-out;
 	}
 
 	.tab__line {
@@ -69,10 +81,53 @@
 	}
 
 	.tab__text {
-		@apply pr-5 text-[24px] font-medium leading-[24px] lg:size-[22px] text-white;
+		@apply pr-5 text-[24px] font-medium leading-[24px] lg:size-[22px] lg:leading-[26px] text-white;
+	}
+
+	.tab__line__orange {
+		@apply h-[2px] lg:h-[4px] w-full bg-black transition-all duration-300 ease-in-out group-hover:bg-softOragne;
+	}
+
+	.tab__text__orange {
+		@apply pr-5 text-[24px] font-medium leading-[24px] lg:size-[22px] lg:leading-[26px] text-black transition-all duration-300 ease-in-out group-hover:text-softOragne;
+	}
+
+	.tab__line__blue {
+		@apply h-[2px] lg:h-[4px] w-full bg-black transition-all duration-300 ease-in-out group-hover:bg-brightBlue;
+	}
+
+	.tab__text__blue {
+		@apply pr-5 text-[24px] font-medium leading-[24px] lg:size-[22px] lg:leading-[26px] text-black transition-all duration-300 ease-in-out group-hover:text-brightBlue;
 	}
 
 	.transition__all {
 		@apply transition-all duration-300 ease-in-out;
 	}
+
+	.activeTab .tab__line__blue {
+		@apply bg-brightBlue;
+	}
+
+	.activeTab .tab__text__blue {
+		@apply text-brightBlue;
+	}
+
+	.activeTab .tab__line__orange {
+		@apply bg-softOragne;
+	}
+
+	.activeTab .tab__text__orange {
+		@apply text-softOragne;
+	}
+
+	.box__shadow__partner {
+		box-shadow: 0px 1px 5px 0px #00000040;
+	}
+	
+	@media (min-width: 1024px) {
+		.box__shadow__partner {
+			box-shadow: none;
+		}
+	}
+	
 }

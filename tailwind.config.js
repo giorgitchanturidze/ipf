@@ -14,6 +14,7 @@ module.exports = {
                 fire: "#FF3B00",
                 night: "#002677",
                 brightBlack: "#1B2F44",
+                softOragne: "#FF7F41",
             },
         },
     },
