@@ -1,11 +1,11 @@
 {
-  "devDependencies": {
-    "prettier": "^3.3.2",
-    "prettier-plugin-tailwindcss": "^0.6.5",
-    "tailwindcss": "^3.4.4"
-  },
-  "scripts": {
-    "dev": "npx tailwindcss --input ./input.css --output ./output.css --watch",
-    "build": "npx tailwindcss --input ./input.css --output ./output.css --minify"
-  }
+    "devDependencies": {
+        "prettier": "^3.3.2",
+        "prettier-plugin-tailwindcss": "^0.6.5",
+        "tailwindcss": "^3.4.4"
+    },
+    "scripts": {
+        "dev": "npx tailwindcss --input ./input.css --output ./output.css --watch",
+        "build": "npx tailwindcss --input ./input.css --output ./output.css --minify"
+    }
 }

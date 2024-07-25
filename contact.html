@@ -1,0 +1,502 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="./output.css" rel="stylesheet" />
+    </head>
+    <body class="bg-brightBlue">
+        <section class="absolute w-full bg-white">
+            <div class="px-5 py-5 lg:mx-auto lg:max-w-[1400px]">
+                <!-- Close -->
+                <div class="mb-3 ml-auto flex justify-end">
+                    <svg
+                        width="38"
+                        height="31"
+                        viewBox="0 0 38 31"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M5 2L31.5165 28.5165"
+                            stroke="#0074F0"
+                            stroke-width="3" />
+                        <path
+                            d="M5 29L31.5165 2.4835"
+                            stroke="#0074F0"
+                            stroke-width="3" />
+                    </svg>
+                </div>
+                <!-- title -->
+                <div
+                    class="xl:justify-cetner flex flex-col uppercase text-brightBlue xl:flex-row xl:items-center">
+                    <h1
+                        class="text-[60px] font-[275] leading-[47px] md:text-[150px] md:leading-[120px] xl:text-[189px] xl:leading-[207px]">
+                        get in&nbsp
+                    </h1>
+                    <h1
+                        class="ml-auto mt-[19px] text-[60px] font-[950] italic leading-[47px] md:mt-0 md:text-[150px] md:leading-[120px] xl:mt-0 xl:text-[189px] xl:leading-[207px]">
+                        Touch
+                    </h1>
+                </div>
+                <form method="POST" class="mt-[91px] md:mt-[120px]">
+                    <div class="flex flex-col gap-[25px] md:gap-[10px]">
+                        <div
+                            class="flex w-full flex-col gap-[25px] md:flex-row md:gap-[10px]">
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                class="w-full rounded-[200px] border border-brightBlue py-[13px] pl-5 pr-10 text-[20px] font-[300] leading-[32px] text-brightBlue transition-all duration-300 ease-out placeholder:uppercase placeholder:text-brightBlue hover:bg-brightBlue/15 md:text-[32px] md:leading-[32px]"
+                                placeholder="First Name...*" />
+                            <input
+                                type="text"
+                                id="surname"
+                                name="surname"
+                                class="w-full rounded-[200px] border border-brightBlue py-[13px] pl-5 pr-10 text-[20px] font-[300] leading-[32px] text-brightBlue transition-all duration-300 ease-out placeholder:uppercase placeholder:text-brightBlue hover:bg-brightBlue/15 md:text-[32px] md:leading-[32px]"
+                                placeholder="Last Name...*" />
+                        </div>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            class="rounded-[200px] border border-brightBlue py-[13px] pl-5 pr-10 text-[20px] font-[300] leading-[32px] text-brightBlue transition-all duration-300 ease-out placeholder:uppercase placeholder:text-brightBlue hover:bg-brightBlue/15 md:text-[32px] md:leading-[32px]"
+                            placeholder="Email...*" />
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            class="h-[200px] rounded-[25px] xl:rounded-[20px] border border-brightBlue px-5 py-2 text-[20px] font-[300] leading-[32px] text-brightBlue transition-all duration-300 ease-out placeholder:uppercase placeholder:text-brightBlue hover:bg-brightBlue/15 md:h-[274px] xl:h-[160px] md:py-5 md:text-[32px] md:leading-[32px]"
+                            placeholder="YOUR MESSAGE...*"></textarea>
+
+                        <p
+                            class="acumin-pro-condensed md:mt-[33px] xl:max-w-full max-w-[621px] text-[19px] font-bold uppercase leading-[23px] text-brightBlue md:block">
+                            by entering your email address, you agree to receive
+                            our information in accordance with our privacy
+                            policy.
+                        </p>
+
+                        <button
+                            type="submit"
+                            class="acumin-pro-condensed group flex h-[35px] w-full items-center justify-center gap-[10px] rounded-[5px] border border-white bg-brightBlue pb-[3px] text-[22px] font-[700] uppercase italic leading-[32px] text-white transition-all duration-300 ease-in-out hover:border-brightBlue hover:bg-white hover:text-brightBlue md:h-10 md:w-[266px] md:pb-[5px] md:text-[30px] md:leading-[32px] md:mt-[33px]">
+                            submit message
+                            <div
+                                class="mt-1 flex h-full items-center justify-center">
+                                <svg
+                                    class="*:transition-all *:duration-300 *:ease-in-out group-hover:*:fill-brightBlue group-hover:*:stroke-brightBlue"
+                                    width="25"
+                                    height="16"
+                                    viewBox="0 0 25 16"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.5 7.99951L20.0918 7.99951"
+                                        stroke="white"
+                                        stroke-width="5"
+                                        stroke-miterlimit="10" />
+                                    <path
+                                        d="M10.7852 15.8364L18.1967 7.99198L10.7852 0.162957L17.0733 0.162957L24.4994 7.99198L17.0733 15.8364L10.7852 15.8364Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                </form>
+                <!-- Contact accordions -->
+                <div class="mt-20 flex flex-col">
+                    <!-- Accordion 1 -->
+                    <div
+                        class="contact-accordion wrapper group mb-0 overflow-hidden border-t border-brightBlue last:border-b md:mb-[10px] md:border-y [&.active]:pb-5">
+                        <div class="w-full" slot="head">
+                            <div
+                                class="header-accordion w-full cursor-pointer pb-1 text-[21px] font-light uppercase italic leading-[34px] text-brightBlue transition-all hover:bg-brightBlue hover:text-white group-[.active]:hover:bg-white group-[.active]:hover:text-brightBlue md:py-2 md:text-[40px] md:leading-[65px] group-[.active]:md:text-[60px] group-[.active]:md:leading-[65px]">
+                                IPF BELGIUM headquarters
+                            </div>
+                        </div>
+                        <div
+                            class="details-accordion max-h-0 opacity-0 transition-all group-[.active]:max-h-[1000px] group-[.active]:opacity-100">
+                            <div class="relative w-full overflow-hidden">
+                                <img
+                                    src="public/images/ipf-belgium-headquarters.jpg"
+                                    alt="headquarters"
+                                    class="center h-[220px] w-[774px] shrink-0 object-cover object-left md:h-[416px] md:w-full" />
+                                <div
+                                    class="absolute bottom-5 right-5 w-[125px]">
+                                    <img
+                                        src="public/images/google-text.png"
+                                        alt="google text"
+                                        class="w-full" />
+                                </div>
+                            </div>
+                            <div
+                                class="mt-[20px] md:mt-20 flex flex-col gap-[20px] text-[15px] font-light leading-[17px] text-brightBlue md:flex-row md:justify-between md:text-[22px] md:leading-[26px]">
+                                <div class="w-full font-light lg:max-w-[594px] shrink-0">
+                                    <p>
+                                        Opened in 2002, our Brussels office is
+                                        our headquarters and the backbone of the
+                                        Foundation's international work.<br /><br />
+                                        The Brussels-based management team of
+                                        the International Polar Foundation
+                                        coordinates our international projects.
+                                        <br />
+                                        The Communication team takes care of
+                                        broadcasting our work to the world via
+                                        websites, social media, and press
+                                        relations.
+                                    </p>
+                                </div>
+                                <!-- contact -->
+                                <div
+                                    class="flex w-full flex-col gap-[20px] lg:max-w-[361px] xl:max-w-[594px]">
+                                    <!-- Adress -->
+                                    <div class="w-full xl:max-w-[493px]">
+                                        <div class="flex items-center gap-0.5">
+                                            <svg
+                                                width="6"
+                                                height="9"
+                                                viewBox="0 0 6 9"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.28866 3.11452C1.28866 2.26967 1.97475 1.58359 2.8196 1.58359C3.66445 1.58359 4.35054 2.26967 4.35054 3.11452C4.35054 3.95937 3.66445 4.64546 2.8196 4.64546C1.97475 4.64546 1.28866 3.95937 1.28866 3.11452Z"
+                                                    stroke="#0074F0"
+                                                    stroke-width="1.57733" />
+                                                <path
+                                                    d="M2.81846 5.18155L1.89062 4.9707L2.81846 8.68206L3.7463 4.9707L2.81846 5.18155Z"
+                                                    fill="#0074F0" />
+                                            </svg>
+
+                                            <p class="font-bold">Address</p>
+                                        </div>
+                                        <p class="font-light">
+                                            Rue des vétérinaires, 42b / 1 
+                                            1070 Brussels, Belgium
+                                        </p>
+                                    </div>
+                                    <!-- Phone -->
+                                    <div class="w-full xl:max-w-[493px]">
+                                        <div class="flex items-center gap-0.5">
+                                            <svg
+                                                width="9"
+                                                height="9"
+                                                viewBox="0 0 9 9"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M8.18333 6.12032C8.05962 5.98134 7.89073 5.89061 7.70655 5.8642L5.71271 5.51744C5.52611 5.4836 5.33356 5.51584 5.16815 5.60861C5.00275 5.70137 4.87484 5.84888 4.80643 6.02575C4.32123 5.7361 3.87947 5.37924 3.49428 4.96579C3.17498 4.62448 2.89964 4.24457 2.67468 3.8349C2.85798 3.78597 3.01748 3.67255 3.12389 3.51548C3.23029 3.3584 3.27646 3.16821 3.25391 2.97984L3.00173 1.03329C2.97975 0.861639 2.89899 0.702905 2.77319 0.584083C2.68573 0.495596 2.57919 0.428289 2.46172 0.387311C2.34425 0.346332 2.21896 0.33277 2.09544 0.34766L1.28372 0.45011C1.12011 0.471332 0.966852 0.541906 0.844363 0.652429C0.721873 0.762951 0.635969 0.908174 0.598097 1.06875C0.247402 2.54245 0.8424 4.44172 2.2964 5.99029C3.64795 7.44035 5.37384 8.22843 6.88695 8.22843C7.11548 8.22897 7.34361 8.2092 7.56863 8.16932C7.7294 8.14458 7.87856 8.0707 7.99567 7.95783C8.11278 7.84495 8.1921 7.6986 8.22274 7.53886L8.36459 6.75078C8.38335 6.63883 8.3768 6.5241 8.34544 6.415C8.31407 6.30591 8.25868 6.20522 8.18333 6.12032Z"
+                                                    fill="#0074F0" />
+                                            </svg>
+
+                                            <p class="font-bold">Phone</p>
+                                        </div>
+                                        <a
+                                            href="tel:+32025203440"
+                                            class="font-light"
+                                            >+32 (0)2 520 34 40</a
+                                        >
+                                    </div>
+                                    <!-- Email -->
+                                    <div class="w-full xl:max-w-[493px]">
+                                        <div class="flex items-center gap-0.5">
+                                            <svg
+                                                width="11"
+                                                height="9"
+                                                viewBox="0 0 11 9"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.28866 1.67636L9.32553 1.67636L9.32553 7.98567L1.28866 7.98567L1.28866 1.67636Z"
+                                                    stroke="#0074F0"
+                                                    stroke-width="1.57733"
+                                                    stroke-miterlimit="10" />
+                                                <mask
+                                                    id="path-2-inside-1_7015_35008"
+                                                    fill="white">
+                                                    <path
+                                                        d="M10.1142 2.46484L5.30709 6.40816L0.5 2.46484" />
+                                                </mask>
+                                                <path
+                                                    d="M5.30709 6.40816L4.30672 7.62767L5.30709 8.4483L6.30747 7.62767L5.30709 6.40816ZM9.11381 1.24533L4.30672 5.18865L6.30747 7.62767L11.1146 3.68435L9.11381 1.24533ZM6.30747 5.18865L1.50038 1.24533L-0.500379 3.68435L4.30672 7.62767L6.30747 5.18865Z"
+                                                    fill="#0074F0"
+                                                    mask="url(#path-2-inside-1_7015_35008)" />
+                                            </svg>
+
+                                            <p class="font-bold">Email</p>
+                                        </div>
+                                        <p class="font-light">
+                                            <a
+                                                href="mailto:info@polarfoundation.org">
+                                                info@polarfoundation.org</a
+                                            >
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion 2 -->
+                    <div
+                        class="contact-accordion wrapper group mb-0 overflow-hidden border-t border-brightBlue last:border-b md:mb-[10px] md:border-y [&.active]:pb-5">
+                        <div class="w-full" slot="head">
+                            <div
+                                class="header-accordion w-full cursor-pointer pb-1 text-[21px] font-light uppercase italic leading-[34px] text-brightBlue transition-all hover:bg-brightBlue hover:text-white group-[.active]:hover:bg-white group-[.active]:hover:text-brightBlue md:py-2 md:text-[40px] md:leading-[65px] group-[.active]:md:text-[60px] group-[.active]:md:leading-[65px]">
+                                IPF BELGIUM headquarters
+                            </div>
+                        </div>
+                        <div
+                            class="details-accordion max-h-0 opacity-0 transition-all group-[.active]:max-h-[1000px] group-[.active]:opacity-100">
+                            <div class="relative w-full overflow-hidden">
+                                <img
+                                    src="public/images/ipf-belgium-headquarters.jpg"
+                                    alt="headquarters"
+                                    class="center h-[220px] w-[774px] shrink-0 object-cover object-left md:h-[416px] md:w-full" />
+                                <div
+                                    class="absolute bottom-5 right-5 w-[125px]">
+                                    <img
+                                        src="public/images/google-text.png"
+                                        alt="google text"
+                                        class="w-full" />
+                                </div>
+                            </div>
+                            <div
+                                class="mt-[20px] flex flex-col gap-[20px] text-[15px] font-light leading-[17px] text-brightBlue md:flex-row md:flex-wrap md:text-[22px] md:leading-[26px]">
+                                <div class="w-full font-light lg:max-w-[594px]">
+                                    <p>
+                                        Opened in 2002, our Brussels office is
+                                        our headquarters and the backbone of the
+                                        Foundation's international work.<br /><br />
+                                        The Brussels-based management team of
+                                        the International Polar Foundation
+                                        coordinates our international projects.
+                                        <br />
+                                        The Communication team takes care of
+                                        broadcasting our work to the world via
+                                        websites, social media, and press
+                                        relations.
+                                    </p>
+                                </div>
+                                <!-- contact -->
+                                <div
+                                    class="flex w-full flex-col gap-[20px] lg:ml-auto lg:max-w-[361px]">
+                                    <!-- Adress -->
+                                    <div>
+                                        <div class="flex items-center gap-0.5">
+                                            <svg
+                                                width="6"
+                                                height="9"
+                                                viewBox="0 0 6 9"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.28866 3.11452C1.28866 2.26967 1.97475 1.58359 2.8196 1.58359C3.66445 1.58359 4.35054 2.26967 4.35054 3.11452C4.35054 3.95937 3.66445 4.64546 2.8196 4.64546C1.97475 4.64546 1.28866 3.95937 1.28866 3.11452Z"
+                                                    stroke="#0074F0"
+                                                    stroke-width="1.57733" />
+                                                <path
+                                                    d="M2.81846 5.18155L1.89062 4.9707L2.81846 8.68206L3.7463 4.9707L2.81846 5.18155Z"
+                                                    fill="#0074F0" />
+                                            </svg>
+
+                                            <p class="font-bold">Address</p>
+                                        </div>
+                                        <p class="font-light">
+                                            Rue des vétérinaires, 42b / 1 <br />
+                                            1070 Brussels, Belgium
+                                        </p>
+                                    </div>
+                                    <!-- Phone -->
+                                    <div>
+                                        <div class="flex items-center gap-0.5">
+                                            <svg
+                                                width="9"
+                                                height="9"
+                                                viewBox="0 0 9 9"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M8.18333 6.12032C8.05962 5.98134 7.89073 5.89061 7.70655 5.8642L5.71271 5.51744C5.52611 5.4836 5.33356 5.51584 5.16815 5.60861C5.00275 5.70137 4.87484 5.84888 4.80643 6.02575C4.32123 5.7361 3.87947 5.37924 3.49428 4.96579C3.17498 4.62448 2.89964 4.24457 2.67468 3.8349C2.85798 3.78597 3.01748 3.67255 3.12389 3.51548C3.23029 3.3584 3.27646 3.16821 3.25391 2.97984L3.00173 1.03329C2.97975 0.861639 2.89899 0.702905 2.77319 0.584083C2.68573 0.495596 2.57919 0.428289 2.46172 0.387311C2.34425 0.346332 2.21896 0.33277 2.09544 0.34766L1.28372 0.45011C1.12011 0.471332 0.966852 0.541906 0.844363 0.652429C0.721873 0.762951 0.635969 0.908174 0.598097 1.06875C0.247402 2.54245 0.8424 4.44172 2.2964 5.99029C3.64795 7.44035 5.37384 8.22843 6.88695 8.22843C7.11548 8.22897 7.34361 8.2092 7.56863 8.16932C7.7294 8.14458 7.87856 8.0707 7.99567 7.95783C8.11278 7.84495 8.1921 7.6986 8.22274 7.53886L8.36459 6.75078C8.38335 6.63883 8.3768 6.5241 8.34544 6.415C8.31407 6.30591 8.25868 6.20522 8.18333 6.12032Z"
+                                                    fill="#0074F0" />
+                                            </svg>
+
+                                            <p class="font-bold">Phone</p>
+                                        </div>
+                                        <a
+                                            href="tel:+32025203440"
+                                            class="font-light"
+                                            >+32 (0)2 520 34 40</a
+                                        >
+                                    </div>
+                                    <!-- Email -->
+                                    <div>
+                                        <div class="flex items-center gap-0.5">
+                                            <svg
+                                                width="11"
+                                                height="9"
+                                                viewBox="0 0 11 9"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.28866 1.67636L9.32553 1.67636L9.32553 7.98567L1.28866 7.98567L1.28866 1.67636Z"
+                                                    stroke="#0074F0"
+                                                    stroke-width="1.57733"
+                                                    stroke-miterlimit="10" />
+                                                <mask
+                                                    id="path-2-inside-1_7015_35008"
+                                                    fill="white">
+                                                    <path
+                                                        d="M10.1142 2.46484L5.30709 6.40816L0.5 2.46484" />
+                                                </mask>
+                                                <path
+                                                    d="M5.30709 6.40816L4.30672 7.62767L5.30709 8.4483L6.30747 7.62767L5.30709 6.40816ZM9.11381 1.24533L4.30672 5.18865L6.30747 7.62767L11.1146 3.68435L9.11381 1.24533ZM6.30747 5.18865L1.50038 1.24533L-0.500379 3.68435L4.30672 7.62767L6.30747 5.18865Z"
+                                                    fill="#0074F0"
+                                                    mask="url(#path-2-inside-1_7015_35008)" />
+                                            </svg>
+
+                                            <p class="font-bold">Email</p>
+                                        </div>
+                                        <p class="font-light">
+                                            <a
+                                                href="mailto:info@polarfoundation.org">
+                                                info@polarfoundation.org</a
+                                            >
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion 3 -->
+                    <div
+                        class="contact-accordion wrapper group mb-0 overflow-hidden border-t border-brightBlue last:border-b md:mb-[10px] md:border-y [&.active]:pb-5">
+                        <div class="w-full" slot="head">
+                            <div
+                                class="header-accordion w-full cursor-pointer pb-1 text-[21px] font-light uppercase italic leading-[34px] text-brightBlue transition-all hover:bg-brightBlue hover:text-white group-[.active]:hover:bg-white group-[.active]:hover:text-brightBlue md:py-2 md:text-[40px] md:leading-[65px] group-[.active]:md:text-[60px] group-[.active]:md:leading-[65px]">
+                                IPF BELGIUM headquarters
+                            </div>
+                        </div>
+                        <div
+                            class="details-accordion max-h-0 opacity-0 transition-all group-[.active]:max-h-[1000px] group-[.active]:opacity-100">
+                            <div class="relative w-full overflow-hidden">
+                                <img
+                                    src="public/images/ipf-belgium-headquarters.jpg"
+                                    alt="headquarters"
+                                    class="center h-[220px] w-[774px] shrink-0 object-cover object-left md:h-[416px] md:w-full" />
+                                <div
+                                    class="absolute bottom-5 right-5 w-[125px]">
+                                    <img
+                                        src="public/images/google-text.png"
+                                        alt="google text"
+                                        class="w-full" />
+                                </div>
+                            </div>
+                            <div
+                                class="mt-[20px] flex flex-col gap-[20px] text-[15px] font-light leading-[17px] text-brightBlue md:flex-row md:flex-wrap md:text-[22px] md:leading-[26px]">
+                                <div class="w-full font-light lg:max-w-[594px]">
+                                    <p>
+                                        Opened in 2002, our Brussels office is
+                                        our headquarters and the backbone of the
+                                        Foundation's international work.<br /><br />
+                                        The Brussels-based management team of
+                                        the International Polar Foundation
+                                        coordinates our international projects.
+                                        <br />
+                                        The Communication team takes care of
+                                        broadcasting our work to the world via
+                                        websites, social media, and press
+                                        relations.
+                                    </p>
+                                </div>
+                                <!-- contact -->
+                                <div
+                                    class="flex w-full flex-col gap-[20px] lg:ml-auto lg:max-w-[361px]">
+                                    <!-- Adress -->
+                                    <div>
+                                        <div class="flex items-center gap-0.5">
+                                            <svg
+                                                width="6"
+                                                height="9"
+                                                viewBox="0 0 6 9"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.28866 3.11452C1.28866 2.26967 1.97475 1.58359 2.8196 1.58359C3.66445 1.58359 4.35054 2.26967 4.35054 3.11452C4.35054 3.95937 3.66445 4.64546 2.8196 4.64546C1.97475 4.64546 1.28866 3.95937 1.28866 3.11452Z"
+                                                    stroke="#0074F0"
+                                                    stroke-width="1.57733" />
+                                                <path
+                                                    d="M2.81846 5.18155L1.89062 4.9707L2.81846 8.68206L3.7463 4.9707L2.81846 5.18155Z"
+                                                    fill="#0074F0" />
+                                            </svg>
+
+                                            <p class="font-bold">Address</p>
+                                        </div>
+                                        <p class="font-light">
+                                            Rue des vétérinaires, 42b / 1 <br />
+                                            1070 Brussels, Belgium
+                                        </p>
+                                    </div>
+                                    <!-- Phone -->
+                                    <div>
+                                        <div class="flex items-center gap-0.5">
+                                            <svg
+                                                width="9"
+                                                height="9"
+                                                viewBox="0 0 9 9"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M8.18333 6.12032C8.05962 5.98134 7.89073 5.89061 7.70655 5.8642L5.71271 5.51744C5.52611 5.4836 5.33356 5.51584 5.16815 5.60861C5.00275 5.70137 4.87484 5.84888 4.80643 6.02575C4.32123 5.7361 3.87947 5.37924 3.49428 4.96579C3.17498 4.62448 2.89964 4.24457 2.67468 3.8349C2.85798 3.78597 3.01748 3.67255 3.12389 3.51548C3.23029 3.3584 3.27646 3.16821 3.25391 2.97984L3.00173 1.03329C2.97975 0.861639 2.89899 0.702905 2.77319 0.584083C2.68573 0.495596 2.57919 0.428289 2.46172 0.387311C2.34425 0.346332 2.21896 0.33277 2.09544 0.34766L1.28372 0.45011C1.12011 0.471332 0.966852 0.541906 0.844363 0.652429C0.721873 0.762951 0.635969 0.908174 0.598097 1.06875C0.247402 2.54245 0.8424 4.44172 2.2964 5.99029C3.64795 7.44035 5.37384 8.22843 6.88695 8.22843C7.11548 8.22897 7.34361 8.2092 7.56863 8.16932C7.7294 8.14458 7.87856 8.0707 7.99567 7.95783C8.11278 7.84495 8.1921 7.6986 8.22274 7.53886L8.36459 6.75078C8.38335 6.63883 8.3768 6.5241 8.34544 6.415C8.31407 6.30591 8.25868 6.20522 8.18333 6.12032Z"
+                                                    fill="#0074F0" />
+                                            </svg>
+
+                                            <p class="font-bold">Phone</p>
+                                        </div>
+                                        <a
+                                            href="tel:+32025203440"
+                                            class="font-light"
+                                            >+32 (0)2 520 34 40</a
+                                        >
+                                    </div>
+                                    <!-- Email -->
+                                    <div>
+                                        <div class="flex items-center gap-0.5">
+                                            <svg
+                                                width="11"
+                                                height="9"
+                                                viewBox="0 0 11 9"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.28866 1.67636L9.32553 1.67636L9.32553 7.98567L1.28866 7.98567L1.28866 1.67636Z"
+                                                    stroke="#0074F0"
+                                                    stroke-width="1.57733"
+                                                    stroke-miterlimit="10" />
+                                                <mask
+                                                    id="path-2-inside-1_7015_35008"
+                                                    fill="white">
+                                                    <path
+                                                        d="M10.1142 2.46484L5.30709 6.40816L0.5 2.46484" />
+                                                </mask>
+                                                <path
+                                                    d="M5.30709 6.40816L4.30672 7.62767L5.30709 8.4483L6.30747 7.62767L5.30709 6.40816ZM9.11381 1.24533L4.30672 5.18865L6.30747 7.62767L11.1146 3.68435L9.11381 1.24533ZM6.30747 5.18865L1.50038 1.24533L-0.500379 3.68435L4.30672 7.62767L6.30747 5.18865Z"
+                                                    fill="#0074F0"
+                                                    mask="url(#path-2-inside-1_7015_35008)" />
+                                            </svg>
+
+                                            <p class="font-bold">Email</p>
+                                        </div>
+                                        <p class="font-light">
+                                            <a
+                                                href="mailto:info@polarfoundation.org">
+                                                info@polarfoundation.org</a
+                                            >
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="/script.js"></script>
+    </body>
+</html>
